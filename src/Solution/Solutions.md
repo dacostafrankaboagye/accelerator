@@ -3,6 +3,7 @@
 - [mortgage calculator](#mortgagecalculator)
 - [mortgage calculator challenge 2](#mortgagecalculator-challenge-2)
 - [Additional Comments](#additional-comments)
+- [Acquired Skills](#acquired-skills)
 
 
 ## FizzBuzzChallenge
@@ -87,3 +88,12 @@ try {
 
 
 ```
+
+## Acquired Skills
+- Input Validation
+- Code Modularity
+- Use of Constants
+- Error Prevention
+- Design Principles
+- Formatting
+
