@@ -8,7 +8,7 @@ Welcome to the Java Foundational Upskilling Training program(Week 2)! This train
 2. [Control Flows](#control-flows)
 3. [Iteration Master](#iteration-master)
 4. [Java Types](#java-types)
-5. [Mortgage Calculator](#mortgage-calculator)
+5. [Mortgage Calculator](#mortgagecalculator)
 
 ## Understanding The Anatomy Of Java
 
@@ -47,8 +47,10 @@ public class AnatomyOfJava {
         System.out.println("4. Packaging Your Application");
     }
 }
+```
 ## Control Flows
 
+```java
 /**
  * Key Things To Know at Foundational Core Java Level:
  * 1. Comparison Operators
@@ -177,7 +179,11 @@ public class ControlFlows {
                 System.out.println("You're A Guest");
         }
     }
+```
+
+
 ## Iteration Master
+```java
 import java.util.Scanner;
 
 /**
@@ -272,7 +278,11 @@ public class IterationMaster {
             System.out.println(fruit);
         }
     }
-## Java Types 
+```
+
+## Java Types
+
+```java
 import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
@@ -646,7 +656,11 @@ public class JavaTypes {
 
     }
 }
+```
+
 ## MortgageCalculator
+
+```java
 /**
  * Building A Mortgage Calculator
  * Requirement Specs:
@@ -729,3 +743,4 @@ public class MortgageCalculator {
     
   
 }
+```
