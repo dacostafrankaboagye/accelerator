@@ -25,6 +25,16 @@ position within the list.
 ---
 
 ### Stacks
+* Simulate a simple calculator using a stack.
+* The stack can store operands and operators.
+* Implement functionalities for pushing elements onto the stack, popping
+elements, and performing basic arithmetic operations `(+, -, *, /)` based on the
+stack content.
+
+- []()
+
+---
+
 
 
 
