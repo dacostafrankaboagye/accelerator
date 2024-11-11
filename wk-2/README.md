@@ -3,6 +3,9 @@
 - [Linked List](#linked-list)
 - [Stacks](#stacks)
 - [Queue](#queue)
+- [Searching](#searching)
+- [Sorting](#sorting)
+- [Spring Framework]()
 
 ### Array
 * Create an application that manages a list of student
@@ -65,6 +68,20 @@ stack content.
   cases
 
 - [Solutions/Part 3 - Searching & Sorting Algorithm/SortingSolution](Solutions/Part%203%20-%20Searching%20&%20Sorting%20Algorithm/SortingSolution)
+
+---
+
+### Spring Framework
+* Create a basic Spring application with a bean definition for a message
+service.
+* Inject the message service into another bean and demonstrate its
+usage.
+* This exercise provides a hands-on introduction to Spring concepts like
+dependency injection and bean configuration.
+
+- [Solutions/Part 4 - Introduction to Spring Framework](Solutions/Part%204%20-%20Introduction%20to%20Spring%20Framework)
+
+
 
 
 
