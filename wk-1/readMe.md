@@ -57,7 +57,6 @@ public class AnatomyOfJava {
  * 2. Logical Operators
  * 3. Conditional Statement
  * 4. Loops
- *
  */
 
 public class ControlFlows {
