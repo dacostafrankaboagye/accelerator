@@ -65,12 +65,11 @@ public class LinkedList {
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
 
-        // Test adding elements
-        list.addToBeginning(10); // List: 10
-        list.addToEnd(20); // List: 10 -> 20
-        list.addToSpecificPosition(15, 1); // List: 10 -> 15 -> 20
+        list.addToBeginning(10);
+        list.addToEnd(20);
+        list.addToSpecificPosition(15, 1);
 
-        list.printLinkedList(); // Output: 10 -> 15 -> 20 -> null
+        list.printLinkedList();
 
     }
 

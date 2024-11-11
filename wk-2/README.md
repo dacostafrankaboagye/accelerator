@@ -1,6 +1,6 @@
 ## Exercises
 - [Array](#array)
-- [Linked List]()
+- [Linked List](#linked-list)
 
 ### Array
 * Create an application that manages a list of student
@@ -21,3 +21,13 @@ position within the list.
 * Implement methods for searching and deleting elements from the linked list
 
 - [Solutions/LinkedListSolution/LinkedList.java](Solutions/LinkedListSolution/LinkedList.java)
+
+---
+
+### Stacks
+
+
+
+
+
+
