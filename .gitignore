@@ -1,29 +1,112 @@
-### IntelliJ IDEA ###
+# Ignore all files in build directories (Maven/Gradle)
+target/
+build/
+
+# Ignore .mvn directory and wrapper files (Maven Wrapper)
+.mvn/
+mvnw
+mvnw.cmd
+
+# Ignore Gradle wrapper files
+.gradle/
+gradlew
+gradlew.bat
+
+# IDE-specific files
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
+# VS Code
 .vscode/
 
-### Mac OS ###
+# OS-specific files
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Logs
+*.log
+*.log.*
+
+# Temporary files
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Class files
+*.class
+
+# Compiled dynamic libraries
+*.dll
+*.so
+*.dylib
+
+# Java crash logs
+hs_err_pid*
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Spring Boot application properties
+# Uncomment if you want to ignore these sensitive files
+# application.properties
+# application.yml
+# application-*.yml
+# application-*.properties
+
+# Coverage and test reports
+coverage/
+*.lcov
+*.clover
+*.jacoco
+
+# SonarQube reports
+.sonar/
+.scannerwork/
+
+# Ignore JetBrains Project Workspace File
+.idea/workspace.xml
+
+# Ignore IDEA project settings folder and files
+.idea/modules.xml
+.idea/*.iml
+.idea/modules
+.idea/inspectionProfiles
+
+# Ignore temporary files, logs, and backup files
+*.orig
+*.rej
+*.bak
+*.swp
+*.swo
+*~
+
+# Ignore code style and user preferences
+.idea/codeStyles/
+.idea/assetWizardSettings.xml
+.idea/assetSettings.xml
+.idea/codeStyles/Stored_code_style.xml
+.idea/encodings.xml
+.idea/uiDesigner.xml
+.idea/scopes/
+
+# Ignore Node.js dependencies (if applicable)
+node_modules/
+
+# Additional directory-specific ignores (optional)
+!.mvn/wrapper/maven-wrapper.jar
