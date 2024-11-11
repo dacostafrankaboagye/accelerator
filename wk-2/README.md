@@ -31,7 +31,7 @@ position within the list.
 elements, and performing basic arithmetic operations `(+, -, *, /)` based on the
 stack content.
 
-- []()
+- [Solutions/StackSolution/Calculator.java](Solutions/StackSolution/Calculator.java)
 
 ---
 
