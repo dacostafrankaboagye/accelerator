@@ -1,0 +1,1 @@
+* Used LinkedList to implement the Queue interface for simplicity

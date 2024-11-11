@@ -35,6 +35,16 @@ stack content.
 
 ---
 
+### Queue
+*  Design a program to simulate a task scheduler using a queue.
+* The queue can store tasks (represented as strings) to be processed in a
+ first-in-first-out (FIFO) manner.
+* Implement functionalities for adding tasks to the queue, removing completed
+   tasks, and displaying the current queue contents.
+
+- []()
+---
+
 
 
 
