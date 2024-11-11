@@ -56,7 +56,15 @@ stack content.
 
 - [Solutions/Part 3 - Searching & Sorting Algorithm/SearchingSolution](Solutions/Part%203%20-%20Searching%20&%20Sorting%20Algorithm/SearchingSolution)
 
+---
 
+### Sorting
+* Implement `linear search` and `binary search` algorithms to find a specific
+  element within an array.
+* Compare the time complexity of both algorithms and discuss their use
+  cases
+
+- [Solutions/Part 3 - Searching & Sorting Algorithm/SortingSolution](Solutions/Part%203%20-%20Searching%20&%20Sorting%20Algorithm/SortingSolution)
 
 
 
