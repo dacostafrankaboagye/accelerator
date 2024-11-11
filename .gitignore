@@ -97,6 +97,7 @@ coverage/
 *~
 
 # Ignore code style and user preferences
+.idea
 .idea/codeStyles/
 .idea/assetWizardSettings.xml
 .idea/assetSettings.xml
