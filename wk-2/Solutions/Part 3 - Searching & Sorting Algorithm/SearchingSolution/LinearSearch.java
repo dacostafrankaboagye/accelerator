@@ -1,6 +1,6 @@
 public class LinearSearch{
 
-    public static int LinearSearch(int[] arrr, int target){
+    public static int linearSearch(int[] arrr, int target){
         for(int i=0; i<arrr.length; i++){
             if(arrr[i] == target){
                 return i;

@@ -4,3 +4,5 @@
 |------------------|------------------------------------|---------------|----------------|----------------------------------------|
 | **Linear Search** | O(n)                               | O(1)          | O(n)           | - Unsorted arrays<br>- Small datasets |
 | **Binary Search** | O(log n)                           | O(1)          | O(log n)       | - Sorted arrays<br>- Large datasets   |
+
+* Note: Elements need to be sorted for the binary search

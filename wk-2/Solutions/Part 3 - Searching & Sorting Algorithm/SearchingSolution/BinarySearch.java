@@ -1,6 +1,6 @@
 public class BinarySearch {
 
-    public static int BinarySearch(int[] arr, int key) {
+    public static int binarySearch(int[] arr, int key) {
         int left = 0;
         int right = arr.length - 1;
         while (left <= right) {
@@ -18,9 +18,9 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        int[] arr = {5, 3, 8, 4, 2, 7};
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8};
         int target = 4;
-        int result = linearSearch(arr, target);
+        int result = binarySearch(arr, target);
 
         System.out.println(result == -1 ? "Element not found" : "Element is at index: " + result);
     }
