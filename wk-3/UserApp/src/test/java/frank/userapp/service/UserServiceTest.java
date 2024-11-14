@@ -11,8 +11,9 @@ import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import java.util.List;
+
+import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 @RunWith(SpringRunner.class)
@@ -83,10 +84,26 @@ public class UserServiceTest {
     @Test
     public void deleteUser() {
 
+        doNothing().when(userRepository).deleteUser(1L);
+
+        userService.deleteUser(1L);
+
+        verify(userRepository, times(1)).deleteUser(1L);
     }
 
     @Test
     public void getAllUsers() {
+
+        when(userRepository.getAllUsers()).thenReturn(List.of(testUser));
+
+        var users = userService.getAllUsers();
+
+        assertNotNull(users);
+        assertFalse(users.isEmpty());
+        assertEquals(1, users.size());
+        assertEquals("Kendrick Lamar", users.getFirst().getName());
+
+        verify(userRepository, times(1)).getAllUsers();
 
     }
 }
