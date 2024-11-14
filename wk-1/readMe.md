@@ -16,7 +16,7 @@ Welcome to the Java Foundational Upskilling Training program(Week 2)! This train
 /**
  * Key Takeaways & Summary:
  * 1. Understanding The Anatomy Of Java
- * 2. ReturnTypes: void
+ * 2. ReturnTypes: void.
  * 3. A program should at least have 1 function
  * 4. A function cannot stand for itself
  * 5. A class contains a group of related functions
