@@ -19,7 +19,7 @@ Welcome to the Java Foundational Upskilling Training program(Week 2)! This train
  * 2. ReturnTypes: void.
  * 3. A program should at least have 1 function
  * 4. A function cannot stand for itself
- * 5. A class contains a group of related functions
+ * 5. A class contains a group of related functions.
  * 6. Class Example: AnatomyOfJava
  * 7. Method Name: main - with a reserved keyword
  * 8. Access Modifier determines accessibility: Public, private
