@@ -11,6 +11,8 @@ Each link below will take you to the corresponding week's content and resources.
 - [Week 2: DSA & Spring Intro](./wk-2/README.md)
     - arrays, linked list, stacks & queues, sorting & searching algorithms, spring framework
 
+- [Week 3: Spring Boot Essentials with CRUD Operations](./wk-3/README.md)
+
 
 ---
 
