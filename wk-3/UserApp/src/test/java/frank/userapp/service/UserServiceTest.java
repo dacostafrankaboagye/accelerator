@@ -67,6 +67,16 @@ public class UserServiceTest {
 
     @Test
     public void updateUser() {
+        User updatedUser = new User(1L, "Kendrick Lamar Updated", "kendrick.updated@gmail.com");
+        when(userRepository.updateUser(eq(1L), any(User.class))).thenReturn(updatedUser);
+
+        User returnedUser = userService.updateUser(1L, updatedUser);
+
+        assertNotNull(returnedUser);
+        assertEquals("Kendrick Lamar Updated", returnedUser.getName());
+        assertEquals("kendrick.updated@gmail.com", returnedUser.getEmail());
+
+        verify(userRepository, times(1)).updateUser(eq(1L), any(User.class));
 
     }
 
