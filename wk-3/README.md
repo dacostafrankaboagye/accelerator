@@ -14,7 +14,7 @@
     - `UserService`: This service interacts with a user repository (simulated for now).
     - `UserController`: This controller receives user data from requests and delegates operations to the UserService.
 - Implement DI in UserService:
-Define a constructor that takes a UserRepository dependency.
+Define a constructor that takes a  `UserRepository` dependency.
 - Implement autowiring in UserController:
 Annotate the UserService dependency with `@Autowired`.
 
