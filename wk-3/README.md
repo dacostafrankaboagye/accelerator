@@ -1,3 +1,9 @@
+# WEEK - 3
+- [Essentials](#essentials) 🛠️
+- [Solutions](#solution) 💡
+- [Concerns](#concerns) ⚠️
+
+
 ## Essentials
 
 - [Part 1: Dependency Injection (DI) & Autowiring](#dependency-injection-di--autowiring)
@@ -6,10 +12,11 @@
 - [Part 4: Building a Spring CRUD Application](#building-a-spring-crud-application)
 
 ## Solution
-- []()
+- [User Application](./UserApp/src/main/java/frank/userapp/)
+- [Test](./UserApp/src/test/java/frank/userapp/)
 
 ## Concerns
-- []()
+- [concerns.md](./concerns.md)
 
 
 ---
@@ -53,9 +60,3 @@ Annotate the UserService dependency with `@Autowired`.
 - Implement a UserController (annotated with @RestController):
     - Define REST endpoints for CRUD operations on users (e.g., using `@GetMapping`, `@PostMapping`,`@PutMapping`,`@DeleteMapping`). * UseUserService` methods to perform CRUD operations within the controller methods.
 - Run your Spring Boot application and test the implemented REST endpoints using tools like Postman or curl commands. Verify that you can create, read, update, and delete user data successfully.
-
-
-
-
-
-
