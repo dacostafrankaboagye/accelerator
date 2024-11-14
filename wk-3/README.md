@@ -39,8 +39,6 @@ Annotate the UserService dependency with `@Autowired`.
 - Implement a UserService class as a Spring bean using `@Service` annotation:
     - Inject the UserRepository dependency using autowiring.
 
-* [Solution](./Part%202/)
-
 #### Unit Testing with JUnit
 
 - Create a JUnit test class for your UserService:
