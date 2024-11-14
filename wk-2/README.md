@@ -13,7 +13,7 @@
 * Implement functionalities to add, search, delete,
   and display student names.
   * Consider handling edge cases like array overflow
-    when adding elements
+    when adding elements.
 
 - [Solutions/Part 1 - Data Structures/ArraySolution/StudentManager.java](Solutions/Part%201%20-%20Data%20Structures/ArraySolution/StudentManager.java)
 
