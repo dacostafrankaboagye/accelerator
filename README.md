@@ -12,6 +12,7 @@ Each link below will take you to the corresponding week's content and resources.
     - arrays, linked list, stacks & queues, sorting & searching algorithms, spring framework
 
 - [Week 3: Spring Boot Essentials with CRUD Operations](./wk-3/README.md)
+    - Dependency Injection, Autowiring, Beans and Configuration, JUnit, simple Spring application with basic CRUD 
 
 
 ---
