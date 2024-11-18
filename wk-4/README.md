@@ -26,5 +26,11 @@
 * Run your Spring Boot application and access the defined endpoint using a tool like `Postman` or `curl`.  
 * Verify that the application responds with the expected message.
 
+#### Part 3: Spring Boot Configuration & Profiles
+* Modify your application to display a welcome message on startup using `application.properties`.
+* Create a new configuration profile named `"dev"` and define a different welcome message for development environments.
+* Run your application with the `"dev"` profile activated and verify that the appropriate welcome message is displayed.
+
+
 
 
