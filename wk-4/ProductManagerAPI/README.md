@@ -14,8 +14,8 @@ testing the application, along with its features.
 1. [Project Setup and Initialization](#project-setup-and-initialization)
 2. [Building the Basic Application](#building-the-basic-application)
 3. [Customizing the Startup Experience](#customizing-the-startup-experience)
-4. Enhancing the API for Products
-5. Implementing Full CRUD Operations
+4. [Enhancing the API for Products](#enhancing-the-api-for-products)
+5. [Implementing Full CRUD Operations](#implementing-full-crud-operations)
 
 ---
 
@@ -41,8 +41,27 @@ curl -X GET --location "http://localhost/hello"
 
 ```
 
+
 ### Customizing the Startup Experience
  - Modified the [application.properties](./src/main/resources/application.properties)
  - New configuration profile [application-dev.properties](./src/main/resources/application-dev.properties)
 
+
+### Enhancing the API for Products
+ - [ProductController](./src/main/java/frank/productmanagerapi/controller/ProductController.java) with dummy data 
+   - Test API Endpoints
+
+            GET /api/v1/products: Returns all products.
+            GET /api/v1/products/1: Returns product with ID 1.
+
+```bash
+
+curl -X GET --location "http://localhost/api/v1/products"
+
+curl -X GET --location "http://localhost/api/v1/products/2"
+
+```
+
+
+### Implementing Full CRUD Operations
        
