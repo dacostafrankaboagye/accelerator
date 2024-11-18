@@ -5,7 +5,7 @@
 The Product Manager API is a Spring Boot application that demonstrates 
 the implementation of a RESTful API for managing product data. 
 
-It supports CRUD operations (Create, Read, Update, Delete) for product resources. 
+It supports CRUD operations (`Create`, `Read`, `Update`, `Delete`) for product resources. 
 
 This document provides a step-by-step guide to building and 
 testing the application, along with its features.
