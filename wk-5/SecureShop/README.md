@@ -1,8 +1,25 @@
 ## Endpoints
 
-| Endpoint       | HTTP Method | Role Access     | Description                  |
-|----------------|-------------|-----------------|------------------------------|
-| `/admin`       | GET         | ADMIN           | Access for admin users only. |
-| `/staff`       | GET         | STAFF           | Access for staff users only. |
-| `/user`        | GET         | REGULAR         | Access for regular users.    |
-| `/public`      | GET         | PUBLIC (ALL)    | Accessible by everyone.      |
+## Endpoints
+The following table summarizes the endpoints and their access roles:
+
+| Endpoint              | HTTP Method | Role Access     | Description                  |
+|-----------------------|-------------|-----------------|------------------------------|
+| `/admin/**`           | GET         | ADMIN           | Access for admin users only. |
+| `/staff/**`           | GET         | STAFF           | Access for staff users only. |
+| `/regular-user/**`    | GET         | REGULAR         | Access for regular users.    |
+| `/public/**`          | GET         | PUBLIC (ALL)    | Accessible by everyone.      |
+
+## Users
+The application uses **in-memory user storage**. Below are the predefined users:
+
+| Username  | Password   | Role     |
+|-----------|------------|----------|
+| Alexis    | Alex123    | REGULAR  |
+| Jordan    | Admin123   | ADMIN    |
+| Taylor    | Staff123   | STAFF    |
+
+
+## Lessons
+ - roles are prefixed with `ROLE_` when using `@Secured`.
+    - enable method security

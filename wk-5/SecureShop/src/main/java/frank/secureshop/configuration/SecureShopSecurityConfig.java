@@ -2,7 +2,10 @@ package frank.secureshop.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
+import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -14,6 +17,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import static org.springframework.security.config.Customizer.withDefaults;
 
 @Configuration
+@EnableMethodSecurity(securedEnabled = true, prePostEnabled = true)
 public class SecureShopSecurityConfig {
 
     @Bean
@@ -26,6 +30,7 @@ public class SecureShopSecurityConfig {
                     authorizationManagerRequestMatcherRegistry.requestMatchers("/staff/**").hasRole("STAFF");
                     authorizationManagerRequestMatcherRegistry.requestMatchers("/regular-user/**").hasRole("REGULAR");
                     authorizationManagerRequestMatcherRegistry.requestMatchers("/public/**").permitAll();
+                    authorizationManagerRequestMatcherRegistry.requestMatchers("/api/**").permitAll();
                     authorizationManagerRequestMatcherRegistry.anyRequest().authenticated();
                 })
                 .httpBasic(withDefaults())
