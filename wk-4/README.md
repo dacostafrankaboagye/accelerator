@@ -6,7 +6,7 @@
 ## Exercises
 - [Part 1: Spring Boot Introduction](#part-1-spring-boot-introduction)
 - [Part 2: Building a Spring Boot Application](#part-2-building-a-spring-boot-application)
-- Part 3
+- [Part 3: Spring Boot Configuration & Profiles](#part-3-spring-boot-configuration--profiles)
 - Part 4
 - Part 4 (Continued)
 

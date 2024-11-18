@@ -43,5 +43,6 @@ curl -X GET --location "http://localhost/hello"
 
 ### Customizing the Startup Experience
  - Modified the [application.properties](./src/main/resources/application.properties)
+ - New configuration profile [application-dev.properties](./src/main/resources/application-dev.properties)
 
        
