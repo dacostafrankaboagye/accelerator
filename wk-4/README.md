@@ -31,6 +31,11 @@
 * Create a new configuration profile named `"dev"` and define a different welcome message for development environments.
 * Run your application with the `"dev"` profile activated and verify that the appropriate welcome message is displayed.
 
+#### Part 4: Spring Boot Web Development
+* Enhance your existing controller to handle a `GET` request for a specific resource (e.g., `/api/v1/products`).
+* Implement logic to return a list of dummy product objects (simulated data).
+* Use `@PathVariable` annotation to capture dynamic values from the request URL (e.g., `product ID`).
+* Run your application and test the new API endpoint using tools like Postman, sending various HTTP requests and verifying the responses.
 
 
 
