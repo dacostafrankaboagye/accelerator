@@ -1,6 +1,7 @@
 # WEEK - 3
 - [Exercises](#exercises) 
-- [Solution](#solution) 💡
+- [Solution](#solution)
+- [Lessons and Takeaways]() 💡
 
 
 ## Exercises
@@ -12,7 +13,7 @@
 
 
 ## Solution
-- [Project Documentation](./ProductManagerAPI/README.md)
+- [Project Documentation](./ProductManagerAPI/README.md) - (ProductManagerAPI/README.md)
 
 
 ---
@@ -51,6 +52,13 @@
 * Implement error handling and return appropriate HTTP status codes (e.g., `201 Created`, `404 Not Found`).
 * Test your newly implemented API endpoints using various HTTP requests with different data and scenarios. Verify that the API behaves as expected for each action (`create`, `read`, `update`, `delete`).
 
+---
 
+## Lessons and Takeways
+- RESTful API Best Practices
+- Spring Boot Annotations
+- Immutable Collections
+- UUID for Unique IDs
+- Handling JSON Data
 
 

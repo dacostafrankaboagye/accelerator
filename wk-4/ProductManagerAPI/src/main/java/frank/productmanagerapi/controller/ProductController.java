@@ -1,28 +1,25 @@
 package frank.productmanagerapi.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+
+import static org.springframework.http.HttpStatus.*;
 
 @RestController
 @RequestMapping("/api/v1/products")
 public class ProductController {
 
-    private final List<Map<String, String>> products = List.of(
-            Map.of("id", "1", "name", "Laptop", "price", "1500"),
-            Map.of("id", "2", "name", "Phone", "price", "800"),
-            Map.of("id", "3", "name", "Headphones", "price", "200"),
-            Map.of("id", "4", "name", "Smart Watch", "price", "300"),
-            Map.of("id", "5", "name", "Gaming Console", "price", "500"),
-            Map.of("id", "6", "name", "Tablet", "price", "400"),
-            Map.of("id", "7", "name", "4K TV", "price", "1200"),
-            Map.of("id", "8", "name", "Bluetooth Speaker", "price", "150"),
-            Map.of("id", "9", "name", "Camera", "price", "1000"),
-            Map.of("id", "10", "name", "External Hard Drive", "price", "100")
+    private final List<Map<String, String>> products = new ArrayList<>(
+            List.of(
+                    new HashMap<>(Map.of("id", "1", "name", "Laptop", "price", "1500")),
+                    new HashMap<>(Map.of("id", "2", "name", "Phone", "price", "800")),
+                    new HashMap<>(Map.of("id", "3", "name", "Headphones", "price", "200")),
+                    new HashMap<>(Map.of("id", "4", "name", "Smart Watch", "price", "300")),
+                    new HashMap<>(Map.of("id", "5", "name", "Gaming Console", "price", "500"))
+            )
     );
 
     @GetMapping
@@ -31,10 +28,43 @@ public class ProductController {
     }
 
     @GetMapping("/{id}")
-    public Map<String, String> getProductById(@PathVariable String id) {
+    public ResponseEntity<?> getProductById(@PathVariable String id) {
         return products.stream()
                 .filter(product -> product.get("id").equals(id))
-                .findFirst().orElse(null);
+                .findFirst()
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
+
+    @PostMapping
+    public ResponseEntity<?> createProduct(@RequestBody Map<String, String> product) {
+        String id = UUID.randomUUID().toString();
+        product.put("id", id);
+        products.add(product);
+        return ResponseEntity
+                .status(CREATED)
+                .body(product);
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<?> updateProduct(@PathVariable String id, @RequestBody Map<String, String> updates) {
+        for (Map<String, String> product : products) {
+            if (product.get("id").equals(id)) {
+                product.putAll(updates);
+                return ResponseEntity.ok(product);
+            }
+        }
+        return ResponseEntity.notFound().build();
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> deleteProduct(@PathVariable String id) {
+        boolean removed = products.removeIf(product -> product.get("id").equals(id));
+        if (removed) {
+            return ResponseEntity.ok("Product deleted");
+        }
+        return ResponseEntity.notFound().build();
+    }
+
 
 }
