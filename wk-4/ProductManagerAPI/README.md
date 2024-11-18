@@ -13,7 +13,7 @@ testing the application, along with its features.
 ## Sections
 1. [Project Setup and Initialization](#project-setup-and-initialization)
 2. [Building the Basic Application](#building-the-basic-application)
-3. Customizing the Startup Experience
+3. [Customizing the Startup Experience](#customizing-the-startup-experience)
 4. Enhancing the API for Products
 5. Implementing Full CRUD Operations
 
@@ -40,5 +40,8 @@ mvn spring-boot:run
 curl -X GET --location "http://localhost/hello"
 
 ```
+
+### Customizing the Startup Experience
+ - Modified the [application.properties](./src/main/resources/application.properties)
 
        
