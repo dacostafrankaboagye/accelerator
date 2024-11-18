@@ -14,6 +14,9 @@ Each link below will take you to the corresponding week's content and resources.
 - [Week 3: Spring Boot Essentials with CRUD Operations](./wk-3/README.md)
     - Dependency Injection, Autowiring, Beans and Configuration, JUnit, simple Spring application with basic CRUD.
 
+- [Week 4: Building a RESTful API with Spring Boot ](./wk-4/README.md)
+    - Spring Boot App, Spring Boot Configuration & Profiles, Web, RESTfil API
+
 
 ---
 
