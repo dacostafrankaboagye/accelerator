@@ -64,7 +64,7 @@ curl -X GET --location "http://localhost/api/v1/products/2"
 
 
 ### Implementing Full CRUD Operations
-- Add endpoints for `POST`, `PUT`, and `DELETE`
+- Added endpoints for `POST`, `PUT`, and `DELETE`
 - Testing Endpoints
 
 ```bash
