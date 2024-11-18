@@ -17,6 +17,10 @@ Each link below will take you to the corresponding week's content and resources.
 - [Week 4: Building a RESTful API with Spring Boot ](./wk-4/README.md)
     - Spring Boot App, Spring Boot Configuration & Profiles, Web, RESTful API
 
+- [Week 5: Spring Security with Database Integration](./wk-5/README.md)
+    - Spring Security Introduction, User Authentication and Authorization, Spring Data JPA, Database Integration with Spring 
+
+
 
 ---
 
