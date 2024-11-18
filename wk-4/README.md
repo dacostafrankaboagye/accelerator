@@ -1,7 +1,7 @@
 # WEEK - 3
 - [Exercises](#exercises) 
 - [Solution](#solution)
-- [Lessons and Takeaways]() 💡
+- [Lessons and Takeaways](#lessons-and-takeways) 💡
 
 
 ## Exercises
