@@ -4,6 +4,7 @@ import frank.secureshop.repository.SecureShopUserRepository;
 import frank.secureshop.service.SecureShopUserDetailsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -27,6 +28,7 @@ import static org.springframework.security.config.Customizer.withDefaults;
 @Configuration
 @EnableMethodSecurity(securedEnabled = true, prePostEnabled = true)
 @RequiredArgsConstructor
+@ComponentScan("frank.secureshop")
 public class SecureShopSecurityConfig {
 
     private final SecureShopUserDetailsService secureShopUserDetailsService;

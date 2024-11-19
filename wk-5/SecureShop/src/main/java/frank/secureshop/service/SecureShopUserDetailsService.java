@@ -22,13 +22,13 @@ public class SecureShopUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        Optional<SecureShopUser> myUser = secureShopUserRepository.findByUsername(username);
-        if(myUser.isPresent()){
-            var userObject =myUser.get();
+        Optional<SecureShopUser> secureShopUserOptional = secureShopUserRepository.findByUsername(username);
+        if(secureShopUserOptional.isPresent()){
+            var secureShopUser =secureShopUserOptional.get();
             return User.builder()
-                    .username(userObject.getUsername())
-                    .password(userObject.getPassword())
-                    .roles(getRole(userObject))
+                    .username(secureShopUser.getUsername())
+                    .password(secureShopUser.getPassword())
+                    .roles(getRole(secureShopUser))
                     .build();
 
         }else {
@@ -37,12 +37,12 @@ public class SecureShopUserDetailsService implements UserDetailsService {
 
     }
 
-    private String[] getRole(SecureShopUser userObject) {
+    private String[] getRole(SecureShopUser secureShopUser) {
         // if the user has no role, it will be assigned USER
-        if(userObject.getRole() == null){
+        if(secureShopUser.getRole() == null){
             return new String[]{"REGULAR"};  // return ["REGULAR"]
         }
         // if something was provided --> it is going to be in this form "USER, ADMIN"
-        return userObject.getRole().split(",");  // it returns String[]
+        return secureShopUser.getRole().split(",");  // it returns String[]
     }
 }

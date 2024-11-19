@@ -1,15 +1,21 @@
 package frank.secureshop.controller;
 
+import frank.secureshop.repository.SecureShopUser;
+import frank.secureshop.repository.SecureShopUserRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
+@RequiredArgsConstructor
 public class SecureShopController {
+
+    private final PasswordEncoder passwordEncoder;
+    private final SecureShopUserRepository secureShopUserRepository;
 
     @GetMapping("/public-key")
     public String getPublicApiKey(@Value("${public.apiKey}") String publicApiKey) {
@@ -28,10 +34,17 @@ public class SecureShopController {
         return staffApiKey;
     }
 
-    @GetMapping("regular-user-key")
+    @GetMapping("/regular-user-key")
     @PreAuthorize("hasAnyRole('ROLE_REGULAR', 'ROLE_STAFF', 'ROLE_ADMIN')")
     public String getRegularApiKey(@Value("${REGULAR_USER_API_KEY}") String regularUserApiKey) {
         return regularUserApiKey;
+    }
+
+    @PostMapping("/register/user")
+    public SecureShopUser creatUser(@RequestBody SecureShopUser secureShopUser){
+        secureShopUser.setPassword(passwordEncoder.encode(secureShopUser.getPassword()));
+        return secureShopUserRepository.save(secureShopUser);
+
     }
 
     
