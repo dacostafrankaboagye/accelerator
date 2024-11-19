@@ -5,6 +5,9 @@
 
 ## Essentials
 - [Part -1](#part---1) :  Spring Security Introduction
+- [Part -2](#part---2) :  User Authentication and Authorization
+- [Part -3](#part---3) :  Spring Data JPA
+- [Part -4](#part---4) :  Database Integration with Spring
 
 
 ## Solution
