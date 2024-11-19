@@ -31,5 +31,11 @@ provider.
 your application logic.
 
 #### Part - 4
+1. Configure your Spring Boot application to connect to the chosen database (e.g.,
+MySQL, PostgreSQL).
+2. Ensure proper database schema creation (tables) aligned with your data model
+entities.
+3. Test data persistence by creating, reading, updating, and deleting data using
+JPA repository methods.
 
 
