@@ -11,7 +11,7 @@
 
 
 ## Solution
-* [Week 5 solution](./SecureShop/README.md) : Using In-Memory users
+* [Week 5 solution](./SecureShop/README.md)
 ---
 
 
