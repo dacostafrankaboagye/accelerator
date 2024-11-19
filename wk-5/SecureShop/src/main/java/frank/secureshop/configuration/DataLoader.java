@@ -8,6 +8,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+/**
+ * Configuration class for initializing default users in the Secure Shop application.
+ * This class checks if the user repository is empty and populates it with default users (ADMIN, STAFF, REGULAR).
+ */
 @Configuration
 @RequiredArgsConstructor
 public class DataLoader {
@@ -15,6 +19,12 @@ public class DataLoader {
     private final SecureShopUserRepository secureShopUserRepository;
     private final PasswordEncoder passwordEncoder;
 
+    /**
+     * CommandLineRunner bean that runs on application startup to initialize default users.
+     * Adds users with predefined roles if the repository is empty.
+     *
+     * @return a CommandLineRunner to execute user initialization on application startup
+     */
     @Bean
     public CommandLineRunner init() {
         return args -> {
