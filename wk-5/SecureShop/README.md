@@ -1,26 +1,37 @@
-## Endpoints
+## Features
+
+- **Role-based Access Control**: Users can be assigned different roles: ADMIN, STAFF, and REGULAR.
+- **Public Access**: Some endpoints are available to all users.
+- **Security**: Passwords are encoded using BCrypt for secure authentication.
+- **Method-level Security**: Enabled to secure specific methods.
+- **Custom Exception Handling**: Graceful error responses with customized exceptions.
 
 ## Endpoints
-The following table summarizes the endpoints and their access roles:
 
-| Endpoint              | HTTP Method | Role Access     | Description                  |
-|-----------------------|-------------|-----------------|------------------------------|
-| `/admin/**`           | GET         | ADMIN           | Access for admin users only. |
-| `/staff/**`           | GET         | STAFF           | Access for staff users only. |
-| `/regular-user/**`    | GET         | REGULAR         | Access for regular users.    |
-| `/public/**`          | GET         | PUBLIC (ALL)    | Accessible by everyone.      |
+The following table summarizes the available endpoints in the SecureShop application:
+
+| HTTP Method | Endpoint                  | Role Required     | Description                                      |
+|-------------|---------------------------|-------------------|--------------------------------------------------|
+| `GET`       | `/admin/**`                | ADMIN             | Accessible only by Admin users.                  |
+| `GET`       | `/staff/**`                | STAFF             | Accessible only by Staff users.                  |
+| `GET`       | `/regular-user/**`         | REGULAR           | Accessible only by Regular users.                |
+| `GET`       | `/public/**`               | PUBLIC            | Accessible by everyone, no authentication required.|
+| `GET`       | `/api/**`                  | PUBLIC            | Accessible by everyone, no authentication required.|
+| `GET`       | `/admin/getInfo`           | ADMIN             | Get details of the current logged-in Admin user. |
+| `GET`       | `/admin/get-all-users`     | ADMIN             | Get details of all users in the system.          |
+| `GET`       | `/regular-user/**`         | REGULAR           | Accessible only by Regular users.                |
+| `GET`       | `/staff/**`                | STAFF             | Accessible only by Staff users.                  |
 
 
-## CRUD Endpoints
+## Default Users
 
-## Users
-The application uses **in-memory user storage** and also **database-user-storage**. Below are the predefined users:
+The following table outlines the default users created in the system:
 
-| Username  | Password   | Role     |
-|-----------|------------|----------|
-| Alexis    | Alex123    | REGULAR  |
-| Jordan    | Admin123   | ADMIN    |
-| Taylor    | Staff123   | STAFF    |
+| Username | Password  | Role  |
+|----------|-----------|-------|
+| Jordan   | Admin123  | ADMIN |
+| Taylor   | Staff123  | STAFF |
+| Alexis   | Alex123   | REGULAR |
 
 
 ## Lessons
