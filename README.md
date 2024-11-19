@@ -18,7 +18,7 @@ Each link below will take you to the corresponding week's content and resources.
     - Spring Boot App, Spring Boot Configuration & Profiles, Web, RESTful API
 
 - [Week 5: Spring Security with Database Integration](./wk-5/README.md)
-    - Spring Security Introduction, User Authentication and Authorization, Spring Data JPA, Database Integration with Spring 
+    - Spring Security Introduction, User Authentication and Authorization, Spring Data JPA, Database Integration with Spring  
 
 
 
