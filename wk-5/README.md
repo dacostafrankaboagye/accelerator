@@ -24,6 +24,11 @@ methods based on user roles.
 3. Test user login functionality and verify that authorization rules are enforced appropriately.
 
 #### Part - 3
+1. Configure Spring Data JPA in your application, including entity classes and JPA
+provider.
+2. Create JPA repositories for your data model entities (e.g., User, Product).
+3. Utilize JPA repository methods to perform CRUD operations on your data within
+your application logic.
 
 #### Part - 4
 

@@ -10,8 +10,11 @@ The following table summarizes the endpoints and their access roles:
 | `/regular-user/**`    | GET         | REGULAR         | Access for regular users.    |
 | `/public/**`          | GET         | PUBLIC (ALL)    | Accessible by everyone.      |
 
+
+## CRUD Endpoints
+
 ## Users
-The application uses **in-memory user storage**. Below are the predefined users:
+The application uses **in-memory user storage** and also **database-user-storage**. Below are the predefined users:
 
 | Username  | Password   | Role     |
 |-----------|------------|----------|
@@ -23,3 +26,4 @@ The application uses **in-memory user storage**. Below are the predefined users:
 ## Lessons
  - roles are prefixed with `ROLE_` when using `@Secured`.
     - enable method security
+ - set the profiles in the `application.properties`
