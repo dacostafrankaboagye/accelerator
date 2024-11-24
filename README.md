@@ -1,6 +1,6 @@
-# Accelerator
-
-Modules - focused content, exercises, and resources.
+# Accelerator  - FL
+* Foundational Level
+* Modules - focused content, exercises, and resources.
 
 ## Weekly Modules
 
